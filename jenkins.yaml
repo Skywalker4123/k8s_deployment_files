@@ -21,13 +21,6 @@ spec:
         image: jenkins/jenkins
         ports:
         - containerPort: 8080
-        volumeMounts:
-        - name: efs-storage-jenkins
-          mountPath: /var/lib/jenkins
-      volumes:
-      - name: efs-storage-jenkins
-        persistentVolumeClaim:
-          claimName: efs-claim
 ---
 apiVersion: v1
 kind: Service
