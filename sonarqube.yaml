@@ -31,10 +31,6 @@ spec:
         volumeMounts:
         - name: efs-storage-sq
           mountPath: /opt/sonarqube/data
-      volumes:
-      - name: efs-storage-sq
-        persistentVolumeClaim:
-          claimName: efs-claim
 ---
 apiVersion: v1
 kind: Service
