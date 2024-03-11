@@ -28,9 +28,6 @@ spec:
           value: sonarqube
         - name: SONARQUBE_JDBC_PASSWORD
           value: password
-        volumeMounts:
-        - name: efs-storage-sq
-          mountPath: /opt/sonarqube/data
 ---
 apiVersion: v1
 kind: Service
